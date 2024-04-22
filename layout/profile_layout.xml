@@ -1,57 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+             android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="188dp"
-        android:layout_height="752dp"
-        android:importantForAccessibility="no"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="230dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/carre_vert"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-13dp" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/greenteam"
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/greeen_team"
         android:text="Accueil"
-        tools:ignore="HardcodedText,MissingConstraints"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="129dp" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="112dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/greenteam"
+        android:layout_above="@+id/button4"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/greeen_team"
         android:text="News"
-        tools:ignore="HardcodedText,MissingConstraints"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="177dp" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/greenteam"
+        android:layout_width="109dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/button5"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/greeen_team"
         android:text="Projet"
-        tools:ignore="HardcodedText,MissingConstraints"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="225dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/greenteam"
-        android:text="LaGreenTeam"
-        tools:ignore="HardcodedText,MissingConstraints"
+        android:layout_above="@+id/button6"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/greeen_team"
+        android:text="La greeen_team"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="273dp" />
 
@@ -59,9 +87,16 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/greenteam"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="246dp"
+        android:backgroundTint="@color/greeen_team"
         android:text="Déconnexion"
-        tools:ignore="HardcodedText,MissingConstraints"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="321dp" />
 
@@ -70,25 +105,29 @@
         android:id="@+id/imageView"
         android:layout_width="41dp"
         android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_above="@+id/button2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="60dp"
         app:srcCompat="@drawable/profile"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="49dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="84dp"
-        android:background="@color/greenteam"
+        android:layout_above="@+id/button2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/greeen_team"
         android:text="Admin"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="57dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
